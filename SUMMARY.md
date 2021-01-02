@@ -1,4 +1,4 @@
-# Avē Maris Stella
+# 合唱曲のラテン語翻訳
 
 * [はじめに](README.md)
 * [Avē Maris Stella (アヴェー・マリス・ステッラ)](AveMarisStella/README.md)

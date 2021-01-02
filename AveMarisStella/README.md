@@ -10,3 +10,13 @@ atque semper virgō, fēlix caelī porta.
 Solve vincla reīs, prōfer lūmen caecīs,
 mala nostra pelle, bona cuncta posce.
 ```
+
+拙訳は以下の通りです。
+```
+めでたし、海の星よ
+優しい神の母よ
+そして、常に乙女である、幸福な天の門よ
+
+罪人たちの鎖を解き放ち、盲目の者たちに光を差し出せ
+私たちの悪を打ち破り、すべての善を願え
+```
