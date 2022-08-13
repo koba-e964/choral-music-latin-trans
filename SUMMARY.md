@@ -8,3 +8,5 @@
   * [Ubi Caritas 第1段落](UbiCaritas/1.md)
 * [Simile est regnum (スィミレ・エストゥ・レーニュム)](SimileEstRegnum/README.md)
   * [Simile est regnum 第1段落](SimileEstRegnum/1.md)
+* [Stabat Mater (スターバトゥ・マーテル)](StabatMater/README.md)
+  * [Stabat Mater 第1段落](StabatMater/1.md)
