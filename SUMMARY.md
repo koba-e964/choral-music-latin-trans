@@ -12,3 +12,4 @@
   * [Stabat Mater 第1段落](StabatMater/1.md)
 * [Ubi Cāritās (ウビ・カーリタース)](UbiCaritas/README.md)
   * [Ubi Caritas 第1段落](UbiCaritas/1.md)
+* [O Salutaris Hostia (オー・サルーターリス・オスティア)](OSalutarisHostia/README.md)
