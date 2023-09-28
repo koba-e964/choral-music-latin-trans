@@ -6,7 +6,7 @@
 Ō salūtāris hostia
 quae caelī pandis ostium:
 bella premunt hostīlia,
-dā rōbur, fer auxilium.
+da rōbur, fer auxilium.
 
 Ūnī trīnōque Dominō
 sit sempiterna glōria,
