@@ -13,3 +13,4 @@
 * [Ubi Cāritās (ウビ・カーリタース)](UbiCaritas/README.md)
   * [Ubi Caritas 第1段落](UbiCaritas/1.md)
 * [O Salutaris Hostia (オー・サルーターリス・オスティア)](OSalutarisHostia/README.md)
+  * [O Salutaris Hostia 第 1 段落](OSalutarisHostia/1.md)
