@@ -1,6 +1,6 @@
 # O Salutaris Hostia (オー・サルーターリス・オスティア)
 
-歌詞については[ChoralWikiの記事](https://www.cpdl.org/wiki/index.php/O_salutaris_hostia)を引用しました。以下が全歌詞です。
+歌詞については[ChoralWikiの記事](https://www.cpdl.org/wiki/index.php/O_salutaris_hostia)を引用しました。以下が全歌詞です。(長音記号については、筆者の責任で付記してあります。)
 
 ```
 Ō salūtāris hostia
