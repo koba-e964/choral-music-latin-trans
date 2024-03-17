@@ -15,3 +15,7 @@
 * [O Salutaris Hostia (オー・サルーターリス・オスティア)](OSalutarisHostia/README.md)
   * [O Salutaris Hostia 第 1 段落](OSalutarisHostia/1.md)
   * [O Salutaris Hostia 第 2 段落](OSalutarisHostia/2.md)
+* [Memorare (メモラーレ)](Memorare/README.md)
+  * [Memorare 第 1 文 (工事中)](Memorare/1.md)
+  * [Memorare 第 2 文 (工事中)](Memorare/2.md)
+  * [Memorare 第 3 文 (工事中)](Memorare/3.md)
