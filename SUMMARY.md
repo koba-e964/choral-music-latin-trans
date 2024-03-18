@@ -18,4 +18,4 @@
 * [Memorare (メモラーレ)](Memorare/README.md)
   * [Memorare 第 1 文](Memorare/1.md)
   * [Memorare 第 2 文](Memorare/2.md)
-  * [Memorare 第 3 文 (工事中)](Memorare/3.md)
+  * [Memorare 第 3 文](Memorare/3.md)
