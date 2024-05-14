@@ -1,13 +1,13 @@
 version = "0"
-full_text = """Ō nāta lux dē lūmine,
-Jēsū redemptor saeculī,
-Dignāre clēmens supplicum
-Laudēs precēsque sūmere.
+full_text = """{{index .Lines "1-1"}}
+{{index .Lines "1-2"}}
+{{index .Lines "1-3"}}
+{{index .Lines "1-4"}}
 
-Quī carne quondam contegī
-Dignātus es prō perditīs,
-Nōs membra confer efficī
-Tuī beātī corporis."""
+{{index .Lines "2-1"}}
+{{index .Lines "2-2"}}
+{{index .Lines "2-3"}}
+{{index .Lines "2-4"}}"""
 translation = """おお、光から生まれた光よ、
 イエスよ、世の贖い主よ、
 恐れ多くも慈悲深く
@@ -15,3 +15,49 @@ translation = """おお、光から生まれた光よ、
 
 かつて堕落した者たちのために恐れ多くも肉をまとった者よ、
 私たちを、あなたの祝福された体の手足とせよ。"""
+
+[lines]
+1-1 = "Ō nāta lux dē lūmine,"
+1-2 = "Jēsū redemptor saeculī,"
+1-3 = "Dignāre clēmens supplicum"
+1-4 = "Laudēs precēsque sūmere."
+2-1 = "Quī carne quondam contegī"
+2-2 = "Dignātus es prō perditīs,"
+2-3 = "Nōs membra confer efficī"
+2-4 = "Tuī beātī corporis."
+
+[[nouns]]
+original_form = "lux"
+declension_type = 3
+translation = "光"
+explanation = "lux,lūcis f."
+declensions = {"vf" = "lux"}
+[[nouns]]
+original_form = "lūmen"
+declension_type = 3
+translation = "光"
+explanation = "lūmen,-inis n."
+declensions = {"an" = "lūmine"}
+[[nouns]]
+original_form = "Jēsū"
+declension_type = 4
+translation = "イエス"
+explanation = "Jēsūs,Jēsū m."
+declensions = {"vm" = "Jēsū"}
+[[nouns]]
+original_form = "redemptor"
+declension_type = 3
+translation = "贖い主"
+explanation = "redemptor,-ōris m."
+declensions = {"vm" = "redemptor"}
+[[nouns]]
+original_form = "saeculum"
+declension_type = 2
+translation = "世・世代"
+explanation = "saeculum,-ī n."
+declensions = {"2n" = "saeculī"}
+
+[[preps]]
+original_form = "dē"
+translation = "〜から"
+takes = "a"
