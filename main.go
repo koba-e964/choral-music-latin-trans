@@ -37,13 +37,15 @@ func discoverDirectories(configFilename string) ([]string, error) {
 }
 
 type Config struct {
-	Version  string `toml:"version"`
-	FullText string `toml:"full_text"`
+	Version     string `toml:"version"`
+	FullText    string `toml:"full_text"`
+	Translation string `toml:"translation"`
 }
 
 type DocData struct {
 	WithMacrons    string
 	WithoutMacrons string
+	Translation    string
 }
 
 const configFilename = "article.toml"
@@ -70,6 +72,7 @@ func (config Config) convert() DocData {
 	return DocData{
 		WithMacrons:    config.FullText,
 		WithoutMacrons: strings.Map(rule, config.FullText),
+		Translation:    config.Translation,
 	}
 }
 
