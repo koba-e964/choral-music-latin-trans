@@ -10,8 +10,7 @@ full_text = """{{index .Lines "1-1"}}
 {{index .Lines "2-4"}}"""
 translation = """おお、光から生まれた光よ、
 イエスよ、世の贖い主よ、
-恐れ多くも慈悲深く
-賛美と祈りを受け入れよ。
+懇願する私どもの賛美と祈りを慈悲深く受け入れよ。
 
 かつて堕落した者たちのために恐れ多くも肉をまとった者よ、
 私たちを、あなたの祝福された体の手足とせよ。"""
@@ -56,6 +55,26 @@ declension_type = 2
 translation = "世・世代"
 explanation = "saeculum,-ī n."
 declensions = {"2n" = "saeculī"}
+[[nouns]]
+original_form = "laus"
+declension_type = 3
+translation = "賞賛"
+explanation = "laus,laudis f."
+declensions = {"4fp" = "laudēs"}
+[[nouns]]
+original_form = "prex"
+declension_type = 3
+translation = "祈り"
+explanation = "prex,precis f."
+declensions = {"4fp" = "precēs"}
+
+[[verbs]]
+original_form = "sūmō"
+conjugation_type = 3
+translation = "受け入れる"
+explanation = "sūmō,sūmere"
+[verbs.conjugations]
+"inf/pres" = {"" = "sūmere"}
 
 [[preps]]
 original_form = "dē"

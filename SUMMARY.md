@@ -20,5 +20,5 @@
   * [Memorare 第2文](Memorare/2.md)
   * [Memorare 第3文](Memorare/3.md)
 * [O nata lux (オー・ナータ・ルクス)](ONataLux/README.md)
-  * [O nata lux 第1段落 (工事中)](ONataLux/1.md)
+  * [O nata lux 第1段落](ONataLux/1.md)
   * [O nata lux 第2段落 (工事中)](ONataLux/2.md)

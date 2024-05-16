@@ -46,6 +46,14 @@ type Noun struct {
 	Declensions    map[string]string `toml:"declensions"`
 }
 
+type Verb struct {
+	Original        string                       `toml:"original_form"`
+	ConjugationType int                          `toml:"conjugation_type"`
+	Translation     string                       `toml:"translation"`
+	Explanation     string                       `toml:"explanation"`
+	Conjugations    map[string]map[string]string `toml:"conjugations"`
+}
+
 type Prep struct {
 	Original    string `toml:"original_form"`
 	Translation string `toml:"translation"`
@@ -58,6 +66,7 @@ type Config struct {
 	Translation string            `toml:"translation"`
 	Lines       map[string]string `toml:"lines"`
 	Nouns       []Noun            `toml:"nouns"`
+	Verbs       []Verb            `toml:"verbs"`
 	Preps       []Prep            `toml:"preps"`
 }
 
@@ -145,6 +154,26 @@ func getNounCaseText(case_ string) string {
 	return fmt.Sprintf("%s・%s", number, caseText)
 }
 
+func getVerbTenseText(tense string, kind string) string {
+	tenseText := ""
+	switch tense {
+	case "inf/pres":
+		tenseText = "不定法・能動態・現在"
+	case "inf/perf":
+		tenseText = "不定法・能動態・完了"
+	default:
+		panic("unknown tense")
+	}
+	kindText := ""
+	switch kind {
+	case "":
+		kindText = ""
+	default:
+		panic("unknown kind")
+	}
+	return fmt.Sprintf("%s%s", tenseText, kindText)
+}
+
 func nounFactory(config Config) func(nounOriginal string, case_ string) string {
 	return func(nounOriginal string, case_ string) string {
 		nounEntry := Noun{}
@@ -173,6 +202,39 @@ func nounFactory(config Config) func(nounOriginal string, case_ string) string {
 		}
 		caseText := getNounCaseText(case_)
 		return fmt.Sprintf("`%s`は%s`%s`(%s)の%sです。", declined, declensionText, nounEntry.Explanation, nounEntry.Translation, caseText)
+	}
+}
+
+func verbFactory(config Config) func(verbOriginal string, tense string, kind string) string {
+	return func(verbOriginal string, tense string, kind string) string {
+		verbEntry := Verb{}
+		conjugated := ""
+		verbEntry.ConjugationType = -1
+		for _, verb := range config.Verbs {
+			if verb.Original == verbOriginal {
+				if val, ok := verb.Conjugations[tense]; ok {
+					if val2, ok2 := val[kind]; ok2 {
+						verbEntry = verb
+						conjugated = val2
+					}
+				}
+			}
+		}
+		if verbEntry.ConjugationType == -1 {
+			panic("unknown noun")
+		}
+
+		conjugationText := ""
+		switch verbEntry.ConjugationType {
+		case 1, 2, 3, 4:
+			conjugationText = "第" + strconv.Itoa(verbEntry.ConjugationType) + "変化動詞"
+		case 0:
+			conjugationText = "不規則動詞"
+		default:
+			log.Panicf("unknown conjugation type: %d", verbEntry.ConjugationType)
+		}
+		caseText := getVerbTenseText(tense, kind)
+		return fmt.Sprintf("`%s`は%s`%s`(%s)の%sです。", conjugated, conjugationText, verbEntry.Explanation, verbEntry.Translation, caseText)
 	}
 }
 
@@ -228,7 +290,11 @@ func main() {
 			if err != nil {
 				log.Panic(err)
 			}
-			tmpl, err := template.New(directory).Funcs(template.FuncMap{"noun": nounFactory(config), "prep": prepFactory(config)}).Parse(string(content))
+			tmpl, err := template.New(directory).Funcs(template.FuncMap{
+				"noun": nounFactory(config),
+				"prep": prepFactory(config),
+				"verb": verbFactory(config),
+			}).Parse(string(content))
 			if err != nil {
 				log.Panic(err)
 			}
