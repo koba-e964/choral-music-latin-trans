@@ -43,6 +43,7 @@ type Config struct {
 	Translation string            `toml:"translation"`
 	Lines       map[string]string `toml:"lines"`
 	Nouns       []decl.Noun       `toml:"nouns"`
+	Adjs        []decl.Adj        `toml:"adjs"`
 	Verbs       []Verb            `toml:"verbs"`
 	Preps       []Prep            `toml:"preps"`
 }
@@ -130,6 +131,7 @@ func main() {
 			}
 			tmpl, err := template.New(directory).Funcs(template.FuncMap{
 				"noun": decl.NounFactory(config.Nouns),
+				"adj":  decl.AdjFactory(config.Adjs),
 				"prep": prepFactory(config.Preps),
 				"verb": verbFactory(config.Verbs),
 			}).Parse(string(content))

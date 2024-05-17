@@ -68,6 +68,25 @@ translation = "祈り"
 explanation = "prex,precis f."
 declensions = {"4fp" = "precēs"}
 
+[[adjs]]
+original_form = "nātus"
+declension_type = 12
+translation = "生まれた"
+explanation = "nātus,nāta,nātum"
+declensions = {"vf" = "nāta"}
+[[adjs]]
+original_form = "clēmens"
+declension_type = 3
+translation = "慈悲深い"
+explanation = "clēmens,-entis"
+declensions = {"1m" = "clēmens"}
+[[adjs]]
+original_form = "supplex"
+declension_type = 3
+translation = "懇願する、乞う"
+explanation = "supplex,-icis"
+declensions = {"2mp" = "supplicum"}
+
 [[verbs]]
 original_form = "sūmō"
 conjugation_type = 3
