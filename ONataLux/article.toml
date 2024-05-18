@@ -12,8 +12,8 @@ translation = """おお、光から生まれた光よ、
 イエスよ、世の贖い主よ、
 懇願する私どもの賛美と祈りを慈悲深く受け入れよ。
 
-かつて堕落した者たちのために恐れ多くも肉をまとった者よ、
-私たちを、あなたの祝福された体の手足とせよ。"""
+かつて堕落した者たちのために肉をまとってくださった者よ、
+私たちを、あなたの祝福された体の手足にせよ。"""
 
 [lines]
 1-1 = "Ō nāta lux dē lūmine,"
@@ -67,6 +67,24 @@ declension_type = 3
 translation = "祈り"
 explanation = "prex,precis f."
 declensions = {"4fp" = "precēs"}
+[[nouns]]
+original_form = "carō"
+declension_type = 3
+translation = "肉"
+explanation = "carō,carnis f."
+declensions = {"af" = "carne"}
+[[nouns]]
+original_form = "membrum"
+declension_type = 2
+translation = "手足"
+explanation = "membrum,-ī n."
+declensions = {"4np" = "membra"}
+[[nouns]]
+original_form = "corpus"
+declension_type = 3
+translation = "体"
+explanation = "corpus,-oris n."
+declensions = {"2n" = "corporis"}
 
 [[adjs]]
 original_form = "nātus"
@@ -86,6 +104,18 @@ declension_type = 3
 translation = "懇願する、乞う"
 explanation = "supplex,-icis"
 declensions = {"2mp" = "supplicum"}
+[[adjs]]
+original_form = "beātus"
+declension_type = 12
+translation = "祝福された"
+explanation = "beātus,beāta,beātum"
+declensions = {"2n" = "beātī"}
+[[adjs]]
+original_form = "perditus"
+declension_type = 12
+translation = "堕落した"
+explanation = "perditus,-a,-um"
+declensions = {"amp" = "perditīs"}
 
 [[verbs]]
 original_form = "sūmō"
@@ -94,8 +124,19 @@ translation = "受け入れる"
 explanation = "sūmō,sūmere"
 [verbs.conjugations]
 "inf/pres" = {"" = "sūmere"}
+[[verbs]]
+original_form = "contegor"
+conjugation_type = 5
+translation = "身にまとう"
+explanation = "contegor,-ī"
+[verbs.conjugations]
+"inf/pres" = {"" = "contegī"}
 
 [[preps]]
 original_form = "dē"
 translation = "〜から"
+takes = "a"
+[[preps]]
+original_form = "prō"
+translation = "〜のために"
 takes = "a"

@@ -59,6 +59,8 @@ func verbFactory(verbs []Verb) func(verbOriginal string, tense string, kind stri
 			conjugationText = "第" + strconv.Itoa(verbEntry.ConjugationType) + "変化動詞"
 		case 0:
 			conjugationText = "不規則動詞"
+		case 5:
+			conjugationText = "形式受動相動詞"
 		default:
 			log.Panicf("unknown conjugation type: %d", verbEntry.ConjugationType)
 		}
