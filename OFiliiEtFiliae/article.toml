@@ -1,0 +1,69 @@
+version = "0"
+full_text = """{{index .Lines "1-1"}}
+{{index .Lines "1-2"}}
+{{index .Lines "1-3"}}
+
+{{index .Lines "11-1"}}
+{{index .Lines "11-2"}}
+{{index .Lines "11-3"}}"""
+translation = """
+おお、息子たちよ、娘たちよ、
+天の王は、栄光の王は
+死から今日復活した。アレルヤ。
+
+この最も聖なる祭において
+賞賛と歓喜がありますように。
+主を讃えよう。アレルヤ。"""
+[lines]
+1-1 = "Ō fīliī et fīliae,"
+1-2 = "Rex caelestis, Rex glōriae,"
+1-3 = "morte surrexit hodiē, allēlūia."
+11-1 = "In hōc festō sanctissimō"
+11-2 = "sit laus et jūbilātiō,"
+11-3 = "benedīcāmus Dominō, allēlūia."
+
+[[nouns]]
+original_form = "fīlius"
+declension_type = 2
+translation = "息子"
+explanation = "fīlius,fīliī m."
+declensions = {"vmp" = "fīliī"}
+[[nouns]]
+original_form = "fīlia"
+declension_type = 1
+translation = "娘"
+explanation = "fīlia,fīliae f."
+declensions = {"vfp" = "fīliae"}
+[[nouns]]
+original_form = "rex"
+declension_type = 3
+translation = "王"
+explanation = "rex,rēgis m."
+declensions = {"1m" = "rex"}
+[[nouns]]
+original_form = "glōria"
+declension_type = 1
+translation = "栄光"
+explanation = "glōria,glōriae f."
+declensions = {"2f" = "glōriae"}
+[[nouns]]
+original_form = "mors"
+declension_type = 3
+translation = "死"
+explanation = "mors,mortis f."
+declensions = {"af" = "morte"}
+
+[[adjs]]
+original_form = "caelestis"
+declension_type = 3
+translation = "天の"
+explanation = "caelestis,-stis"
+declensions = {"1m" = "caelestis"}
+
+[[verbs]]
+original_form = "surgō"
+conjugation_type = 3
+translation = "立ち上がる、復活する"
+explanation = "surgō,surgere"
+[verbs.conjugations]
+"ind/perf" = {"3s" = "surrexit"}

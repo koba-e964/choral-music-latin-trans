@@ -22,3 +22,6 @@
 * [O nata lux (オー・ナータ・ルクス)](ONataLux/README.md)
   * [O nata lux 第1段落](ONataLux/1.md)
   * [O nata lux 第2段落](ONataLux/2.md)
+* [O filii et filiae (オー・フィーリイー・エトゥ・フィーリエー)](OFiliiEtFiliae/README.md)
+  * [O filii et filiae 第1段落](OFiliiEtFiliae/1.md)
+  * [O filii et filiae 第2段落](OFiliiEtFiliae/2.md)
