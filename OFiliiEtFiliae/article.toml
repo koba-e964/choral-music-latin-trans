@@ -52,6 +52,30 @@ declension_type = 3
 translation = "死"
 explanation = "mors,mortis f."
 declensions = {"af" = "morte"}
+[[nouns]]
+original_form = "festum"
+declension_type = 2
+translation = "祝祭"
+explanation = "festum,festī n."
+declensions = {"an" = "festō"}
+[[nouns]]
+original_form = "laus"
+declension_type = 3
+translation = "賞賛"
+explanation = "laus,laudis f."
+declensions = {"1f" = "laus"}
+[[nouns]]
+original_form = "jūbilātiō"
+declension_type = 3
+translation = "歓喜"
+explanation = "jūbilātiō,-ōnis f."
+declensions = {"1f" = "jūbilātiō"}
+[[nouns]]
+original_form = "dominus"
+declension_type = 2
+translation = "主"
+explanation = "dominus,dominī m."
+declensions = {"3m" = "dominō"}
 
 [[adjs]]
 original_form = "caelestis"
@@ -67,3 +91,22 @@ translation = "立ち上がる、復活する"
 explanation = "surgō,surgere"
 [verbs.conjugations]
 "ind/perf" = {"3s" = "surrexit"}
+[[verbs]]
+original_form = "sum"
+conjugation_type = 0
+translation = "ある、いる"
+explanation = "sum,esse"
+[verbs.conjugations]
+"sub/pres" = {"3s" = "sit"}
+[[verbs]]
+original_form = "benedīcō"
+conjugation_type = 3
+translation = "讃える"
+explanation = "benedīcō,-ere"
+[verbs.conjugations]
+"sub/pres" = {"1p" = "benedīcāmus"}
+
+[[preps]]
+original_form = "in"
+translation = "〜〜へ/〜〜で"
+takes = "4a"

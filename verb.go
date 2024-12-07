@@ -25,6 +25,10 @@ func getVerbTenseText(tense string, kind string) string {
 		tenseText = "直説法・現在"
 	case "ind/perf":
 		tenseText = "直説法・完了"
+	case "sub/pres":
+		tenseText = "接続法・現在"
+	case "sub/perf":
+		tenseText = "接続法・完了"
 	default:
 		panic("unknown tense")
 	}
@@ -32,8 +36,18 @@ func getVerbTenseText(tense string, kind string) string {
 	switch kind {
 	case "":
 		kindText = ""
+	case "1s":
+		kindText = "・一人称・単数"
+	case "2s":
+		kindText = "・二人称・単数"
 	case "3s":
 		kindText = "・三人称・単数"
+	case "1p":
+		kindText = "・一人称・複数"
+	case "2p":
+		kindText = "・二人称・複数"
+	case "3p":
+		kindText = "・三人称・複数"
 	default:
 		panic("unknown kind")
 	}
