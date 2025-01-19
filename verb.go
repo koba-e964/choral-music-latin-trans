@@ -25,6 +25,8 @@ func getVerbTenseText(tense string, kind string) string {
 		tenseText = "直説法・現在"
 	case "ind/perf":
 		tenseText = "直説法・完了"
+	case "ind/fut":
+		tenseText = "直説法・未来"
 	case "sub/pres":
 		tenseText = "接続法・現在"
 	case "sub/perf":

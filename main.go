@@ -46,6 +46,8 @@ type Config struct {
 	Adjs        []decl.Adj        `toml:"adjs"`
 	Verbs       []Verb            `toml:"verbs"`
 	Preps       []Prep            `toml:"preps"`
+	Conjs       []Conj            `toml:"conjs"`
+	Interjs     []Interj          `toml:"interjs"`
 }
 
 type docData struct {
@@ -130,10 +132,12 @@ func main() {
 				log.Panic(err)
 			}
 			tmpl, err := template.New(directory).Funcs(template.FuncMap{
-				"noun": decl.NounFactory(config.Nouns),
-				"adj":  decl.AdjFactory(config.Adjs),
-				"prep": prepFactory(config.Preps),
-				"verb": verbFactory(config.Verbs),
+				"noun":   decl.NounFactory(config.Nouns),
+				"adj":    decl.AdjFactory(config.Adjs),
+				"prep":   prepFactory(config.Preps),
+				"verb":   verbFactory(config.Verbs),
+				"conj":   conjFactory(config.Conjs),
+				"interj": interjFactory(config.Interjs),
 			}).Parse(string(content))
 			if err != nil {
 				log.Panic(err)

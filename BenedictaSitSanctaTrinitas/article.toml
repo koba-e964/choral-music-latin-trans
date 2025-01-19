@@ -36,6 +36,12 @@ translation = "結束"
 explanation = "ūnitās,ūnitātis f."
 declensions = {"1f" = "ūnitās"}
 [[nouns]]
+original_form = "misericordia"
+declension_type = 1
+translation = "慈悲"
+explanation = "misericordia,-ae f."
+declensions = {"4f" = "misericordiam"}
+[[nouns]]
 original_form = "pater"
 declension_type = 3
 translation = "父"
@@ -55,12 +61,38 @@ explanation = "spīritus,-ūs m."
 declensions = {"am" = "spīritū"}
 
 [[adjs]]
+original_form = "benedictus"
+declension_type = 12
+translation = "祝福される"
+explanation = "benedictus,-a,-um"
+declensions = {"1f" = "benedicta"}
+[[adjs]]
 original_form = "sanctus"
 declension_type = 12
 translation = "聖なる"
 explanation = "sanctus,sancta,sanctum"
-declensions = {"am" = "sanctō"}
+declensions = {"am" = "sanctō", "1f" = "sancta"}
+[[adjs]]
+original_form = "indīvīsus"
+declension_type = 12
+translation = "不可分の"
+explanation = "indīvīsus,-a,-um"
+declensions = {"1f" = "indīvīsa"}
 
+[[verbs]]
+original_form = "sum"
+conjugation_type = 0
+translation = "ある、いる"
+explanation = "sum,esse"
+[verbs.conjugations]
+"sub/pres" = {"3s" = "sit"}
+[[verbs]]
+original_form = "confiteor"
+conjugation_type = 2
+translation = "認める"
+explanation = "confiteor,confitērī"
+[verbs.conjugations]
+"ind/fut" = {"1p" = "confitēbimur"}
 [[verbs]]
 original_form = "benedīcō"
 conjugation_type = 3
@@ -73,3 +105,14 @@ explanation = "benedīcō,-ere"
 original_form = "cum"
 translation = "〜と共に"
 takes = "a"
+
+[[conjs]]
+original_form = "atque"
+translation = "そして、同様に"
+[[conjs]]
+original_form = "quia"
+translation = "なぜなら"
+
+[[interjs]]
+original_form = "allēlūia"
+translation = "アレルヤ"

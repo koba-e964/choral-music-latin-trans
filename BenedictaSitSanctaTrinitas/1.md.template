@@ -1,6 +1,21 @@
+# (工事中)
 ## {{index .Lines "1-1"}}
+- {{adj "benedictus" "1f"}}
+- {{verb "sum" "sub/pres" "3s"}}接続法はここでは願望を意味します。
+- {{adj "sanctus" "1f"}}
+- {{noun "trīnitās" "1f"}}
 ## {{index .Lines "1-2"}}
+- {{conj "atque"}}
+- {{adj "indīvīsus" "1f"}}
+- {{noun "ūnitās" "1f"}}
 ## {{index .Lines "1-3"}}
+- {{verb "confiteor" "ind/fut" "1p"}}
+- `eī`は指示代名詞`is,ea,id`(それ)の女性・単数・与格です。
 ## {{index .Lines "1-4"}}
+- {{conj "quia"}}
+- `fēcit`
+- `nōbiscum`
+- {{noun "misericordia" "4f"}}
+- `suam`は所有形容詞`suus`(自分の)の女性・単数・対格です。「自分」というのは`eī`を指します。
 ## {{index .Lines "1-5"}}
-- `allēlūia`は間投詞(アレルヤ)です。
+- {{interj "allēlūia"}}
