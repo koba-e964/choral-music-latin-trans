@@ -35,6 +35,31 @@ declension_type = 3
 translation = "結束"
 explanation = "ūnitās,ūnitātis f."
 declensions = {"1f" = "ūnitās"}
+[[nouns]]
+original_form = "pater"
+declension_type = 3
+translation = "父"
+explanation = "pater,patris m."
+declensions = {"3m" = "patrī", "4m" = "patrem"}
+[[nouns]]
+original_form = "fīlius"
+declension_type = 2
+translation = "息子"
+explanation = "fīlius,fīliī m."
+declensions = {"4m" = "fīlium", "vmp" = "fīliī"}
+[[nouns]]
+original_form = "spīritus"
+declension_type = 4
+translation = "霊、魂"
+explanation = "spīritus,-ūs m."
+declensions = {"am" = "spīritū"}
+
+[[adjs]]
+original_form = "sanctus"
+declension_type = 12
+translation = "聖なる"
+explanation = "sanctus,sancta,sanctum"
+declensions = {"am" = "sanctō"}
 
 [[verbs]]
 original_form = "benedīcō"
@@ -43,3 +68,8 @@ translation = "讃える"
 explanation = "benedīcō,-ere"
 [verbs.conjugations]
 "sub/pres" = {"1p" = "benedīcāmus"}
+
+[[preps]]
+original_form = "cum"
+translation = "〜と共に"
+takes = "a"
