@@ -9,7 +9,7 @@ type Interj struct {
 	Translation string `toml:"translation"`
 }
 
-func interjFactory(interjs []Interj) func(prepOriginal string) string {
+func interjFactory(interjs []Interj) func(interjOriginal string) string {
 	return func(interjOriginal string) string {
 		for _, interj := range interjs {
 			if interj.Original == interjOriginal {

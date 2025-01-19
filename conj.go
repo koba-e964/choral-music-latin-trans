@@ -9,7 +9,7 @@ type Conj struct {
 	Translation string `toml:"translation"`
 }
 
-func conjFactory(conjs []Conj) func(prepOriginal string) string {
+func conjFactory(conjs []Conj) func(conjOriginal string) string {
 	return func(conjOriginal string) string {
 		for _, conj := range conjs {
 			if conj.Original == conjOriginal {
