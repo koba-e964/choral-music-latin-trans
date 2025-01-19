@@ -1,0 +1,118 @@
+version = "0"
+full_text = """{{index .Lines "1-1"}}
+{{index .Lines "1-2"}}
+{{index .Lines "1-3"}}
+{{index .Lines "1-4"}}
+{{index .Lines "1-5"}}
+
+{{index .Lines "2-1"}}
+{{index .Lines "2-2"}}"""
+translation = """聖なる三位一体が祝福されますように。
+そして不可分な結束も。
+私たちは彼を認めるだろう。
+なぜなら彼は私たちとともに慈悲を与えたからだ。
+
+私たちは父と子を、聖霊とともに祝福しよう。"""
+
+[lines]
+1-1 = "Benedicta sit sancta Trīnitās"
+1-2 = "atque indīvīsa Ūnitās"
+1-3 = "confitēbimur eī"
+1-4 = "quia fēcit nōbiscum misericordiam suam."
+1-5 = "Allēlūia."
+2-1 = "Benedīcāmus Patrem et Fīlium"
+2-2 = "cum Sanctō Spīritū."
+
+[[nouns]]
+original_form = "trīnitās"
+declension_type = 3
+translation = "三位一体"
+explanation = "trīnitās,-tis f."
+declensions = {"1f" = "trīnitās"}
+[[nouns]]
+original_form = "ūnitās"
+declension_type = 3
+translation = "結束"
+explanation = "ūnitās,ūnitātis f."
+declensions = {"1f" = "ūnitās"}
+[[nouns]]
+original_form = "misericordia"
+declension_type = 1
+translation = "慈悲"
+explanation = "misericordia,-ae f."
+declensions = {"4f" = "misericordiam"}
+[[nouns]]
+original_form = "pater"
+declension_type = 3
+translation = "父"
+explanation = "pater,patris m."
+declensions = {"3m" = "patrī", "4m" = "patrem"}
+[[nouns]]
+original_form = "fīlius"
+declension_type = 2
+translation = "息子"
+explanation = "fīlius,fīliī m."
+declensions = {"4m" = "fīlium", "vmp" = "fīliī"}
+[[nouns]]
+original_form = "spīritus"
+declension_type = 4
+translation = "霊、魂"
+explanation = "spīritus,-ūs m."
+declensions = {"am" = "spīritū"}
+
+[[adjs]]
+original_form = "benedictus"
+declension_type = 12
+translation = "祝福される"
+explanation = "benedictus,-a,-um"
+declensions = {"1f" = "benedicta"}
+[[adjs]]
+original_form = "sanctus"
+declension_type = 12
+translation = "聖なる"
+explanation = "sanctus,sancta,sanctum"
+declensions = {"am" = "sanctō", "1f" = "sancta"}
+[[adjs]]
+original_form = "indīvīsus"
+declension_type = 12
+translation = "不可分の"
+explanation = "indīvīsus,-a,-um"
+declensions = {"1f" = "indīvīsa"}
+
+[[verbs]]
+original_form = "sum"
+conjugation_type = 0
+translation = "ある、いる"
+explanation = "sum,esse"
+[verbs.conjugations]
+"sub/pres" = {"3s" = "sit"}
+[[verbs]]
+original_form = "confiteor"
+conjugation_type = 2
+translation = "認める"
+explanation = "confiteor,confitērī"
+[verbs.conjugations]
+"ind/fut" = {"1p" = "confitēbimur"}
+[[verbs]]
+original_form = "benedīcō"
+conjugation_type = 3
+translation = "讃える"
+explanation = "benedīcō,-ere"
+[verbs.conjugations]
+"sub/pres" = {"1p" = "benedīcāmus"}
+
+[[preps]]
+original_form = "cum"
+translation = "〜と共に"
+takes = "a"
+
+[[conjs]]
+original_form = "atque"
+translation = "そして、同様に"
+[[conjs]]
+original_form = "quia"
+translation = "なぜなら"
+
+[[interjs]]
+original_form = "allēlūia"
+translation = "アレルヤ"

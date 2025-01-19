@@ -25,3 +25,6 @@
 * [O filii et filiae (オー・フィーリイー・エトゥ・フィーリエー)](OFiliiEtFiliae/README.md)
   * [O filii et filiae 第1段落](OFiliiEtFiliae/1.md)
   * [O filii et filiae 第2段落](OFiliiEtFiliae/2.md)
+* [Benedicta sit sancta Trinitas](BenedictaSitSanctaTrinitas/README.md)
+  * [Benedicta sit sancta Trinitas 第1段落(工事中)](BenedictaSitSanctaTrinitas/1.md)
+  * [Benedicta sit sancta Trinitas 第2段落](BenedictaSitSanctaTrinitas/2.md)
